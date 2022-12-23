@@ -1,6 +1,6 @@
 # covid_app
 
-A new Flutter project.
+This is Covid Tracker App for tracking the covid cases around the world and also indvidual countries covid Data.
 
 ## Getting Started
 
