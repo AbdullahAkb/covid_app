@@ -256,7 +256,7 @@ class _MainScreenState extends State<MainScreen> {
                                 // Optional. Styles the search field.
                                 inputDecoration: InputDecoration(
                                   contentPadding:
-                                      EdgeInsets.only(left: width * 0.05),
+                                      EdgeInsets.only(left: width * 0.06),
                                   // labelText: 'Search with country name',
                                   hintText: 'Search with country name',
                                   // prefixIcon: const Icon(Icons.search),
