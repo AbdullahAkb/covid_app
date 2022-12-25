@@ -51,8 +51,9 @@ class _CountriesListScreenState extends State<CountriesListScreen> {
     List<CountryModel> list = [];
     for (var i = 0; i < dataList.length; i++) {
       if (query == dataList[i].country) {
-        searchList.add(dataList[i]);
-      } else if (query == null) {
+        CountryModel obj = dataList[i];
+        searchList.add(obj);
+      } else if (query == "") {
         searchList = dataList;
       }
     }

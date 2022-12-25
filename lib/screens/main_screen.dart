@@ -34,38 +34,7 @@ class _MainScreenState extends State<MainScreen> {
     return data;
   }
 
-  // List<CountryModel> dataList = [];
-  // var dataOfCountry;
-  // Future<List<CountryModel>> getDataofCountries() async {
-  //   print("ali");
-  //   Uri uri = Uri.parse("https://disease.sh/v3/covid-19/countries");
-  //   print("ahmad");
-  //   http.Response response = await http.get(uri);
-  //   print(response.body);
-  //   var decodedBody = jsonDecode(response.body) as List;
-  //   for (var i = 0; i < decodedBody.length; i++) {
-  //     CountryModel obj = CountryModel.fromJson(decodedBody[i]);
-  //     dataList.add(obj);
-  //   }
-  //   print("dataList of Countries: ${dataList}");
-  //   return dataList;
-  // }
-
-  // void changed() async {
-  //   Navigator.of(context).push(MaterialPageRoute(
-  //     builder: (context) {
-  //       return CountryDetailScreen(countryName: country_name);
-  //     },
-  //   ));
-  // }
-
   List<Color> colors = [Colors.blue, Colors.green, Colors.red];
-
-  // void initState() {
-  //   super.initState();
-  //   getDataofCountries();
-  //   // dataOfSingleCountry(dataList);
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -291,7 +260,7 @@ class _MainScreenState extends State<MainScreen> {
                         Container(
                           height: height * 0.3,
                           width: width * 0.7,
-                        )
+                        ),
                       ],
                     ),
                     baseColor: Color.fromARGB(255, 95, 95, 95),
