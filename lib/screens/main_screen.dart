@@ -250,8 +250,9 @@ class _MainScreenState extends State<MainScreen> {
                       ],
                     ),
                   ),
-                  SizedBox(
-                    height: height * 0.1,
+                  Flexible(
+                    flex: 1,
+                    child: Container(),
                   ),
                   Container(
                     decoration: BoxDecoration(
@@ -274,6 +275,9 @@ class _MainScreenState extends State<MainScreen> {
                       ],
                     ),
                   ),
+                  SizedBox(
+                    height: height * 0.1,
+                  )
                 ],
               );
             } else if (snapshot.connectionState == ConnectionState.waiting) {
