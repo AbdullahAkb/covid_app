@@ -8,6 +8,7 @@ import 'dart:convert';
 import 'package:pie_chart/pie_chart.dart';
 import 'package:http/http.dart' as http;
 import 'package:country_picker/country_picker.dart';
+import 'package:shimmer/shimmer.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({
@@ -123,9 +124,6 @@ class _MainScreenState extends State<MainScreen> {
                         borderRadius: BorderRadius.all(Radius.circular(4))),
                     child: Column(
                       children: [
-                        // SizedBox(
-                        //   height: 20,
-                        // ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -338,9 +336,22 @@ class _MainScreenState extends State<MainScreen> {
                   ),
                 ],
               );
-            } else {
-              Center(
-                child: CupertinoActivityIndicator(color: Colors.grey),
+            } else if (snapshot.connectionState == ConnectionState.waiting) {
+              SizedBox(
+                height: 100,
+                width: width,
+                child: Shimmer.fromColors(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          height: height * 0.3,
+                          width: width * 0.7,
+                        )
+                      ],
+                    ),
+                    baseColor: Color.fromARGB(255, 95, 95, 95),
+                    highlightColor: Color.fromARGB(255, 219, 219, 219)),
               );
             }
             return Container();

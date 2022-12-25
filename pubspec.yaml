@@ -42,6 +42,7 @@ dependencies:
   country_picker: ^2.0.19
   flutter_localizations:
     sdk: flutter
+  shimmer: ^2.0.0
   
 
 dev_dependencies:
