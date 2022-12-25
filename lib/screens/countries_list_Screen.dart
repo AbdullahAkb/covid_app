@@ -53,6 +53,7 @@ class _CountriesListScreenState extends State<CountriesListScreen> {
       if (query == dataList[i].country) {
         CountryModel obj = dataList[i];
         searchList.add(obj);
+        break;
       } else if (query == "") {
         searchList = dataList;
       }
