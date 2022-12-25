@@ -61,8 +61,8 @@ class MyApp extends StatelessWidget {
       ],
       home: AnimatedSplashScreen(
         splash: Images.splash_logo,
-        animationDuration: Duration(seconds: 2),
-        duration: 2000,
+        animationDuration: Duration(seconds: 3),
+        // duration: 20,
         splashIconSize: 130.0,
         nextScreen: MainScreen(),
         splashTransition: SplashTransition.rotationTransition,

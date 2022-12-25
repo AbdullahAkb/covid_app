@@ -269,66 +269,6 @@ class _MainScreenState extends State<MainScreen> {
                                 return CountriesListScreen();
                               },
                             ));
-                            // getDataofCountries();
-                            // showCountryPicker(
-                            //   context: context,
-
-                            //   //Optional.  Can be used to exclude(remove) one ore more country from the countries list (optional).
-                            //   exclude: <String>['KN', 'MF'],
-                            //   favorite: <String>['PK'],
-                            //   //Optional. Shows phone code before the country name.
-                            //   showPhoneCode: true,
-                            //   onClosed: () {
-                            //     changed();
-                            //   },
-                            //   onSelect: (Country country) {
-                            //     setState(() {
-                            //       country_name =
-                            //           country.nameLocalized.toString();
-                            //     });
-                            //     // changed(country);
-                            //     print('Select country: ${country.displayName}');
-                            //   },
-                            //   // Optional. Sets the theme for the country list picker.
-                            //   countryListTheme: CountryListThemeData(
-                            //     textStyle: TextStyle(color: Colors.white),
-                            //     backgroundColor:
-                            //         Color.fromARGB(255, 49, 49, 49),
-                            //     // Optional. Sets the border radius for the bottomsheet.
-                            //     borderRadius: BorderRadius.only(
-                            //       topLeft: Radius.circular(0),
-                            //       topRight: Radius.circular(0),
-                            //     ),
-                            //     // Optional. Styles the search field.
-                            //     inputDecoration: InputDecoration(
-                            //       contentPadding:
-                            //           EdgeInsets.only(left: width * 0.06),
-
-                            //       hintText: 'Search with country name',
-                            //       // prefixIcon: const Icon(Icons.search),
-                            //       hintStyle: TextStyle(color: Colors.white),
-                            //       enabledBorder: OutlineInputBorder(
-                            //         borderRadius:
-                            //             BorderRadius.all(Radius.circular(50)),
-                            //         borderSide: BorderSide(
-                            //           color: Colors.white,
-                            //         ),
-                            //       ),
-                            //       focusedBorder: OutlineInputBorder(
-                            //         borderRadius:
-                            //             BorderRadius.all(Radius.circular(50)),
-                            //         borderSide: BorderSide(
-                            //           color: Colors.white,
-                            //         ),
-                            //       ),
-                            //     ),
-                            //     // Optional. Styles the text in the search field
-                            //     searchTextStyle: TextStyle(
-                            //       color: Colors.white,
-                            //       // fontSize: 18,
-                            //     ),
-                            //   ),
-                            // );
                           },
                         ),
                       ],
