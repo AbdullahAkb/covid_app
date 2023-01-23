@@ -39,7 +39,7 @@ class _CountriesListScreenState extends State<CountriesListScreen> {
       CountryModel obj = CountryModel.fromJson(decodedBody[i]);
       dataList.add(obj);
     }
-    await Future<void>.delayed(Duration(seconds: 2));
+    // await Future<void>.delayed(Duration(seconds: 2));
     shimmerValue = false;
     print(dataList);
 
@@ -50,7 +50,7 @@ class _CountriesListScreenState extends State<CountriesListScreen> {
   Future<List<CountryModel>> search(String query) async {
     List<CountryModel> list = [];
     for (var i = 0; i < dataList.length; i++) {
-      if (query == dataList[i].country) {
+      if (query.toLowerCase() == dataList[i].country.toLowerCase()) {
         CountryModel obj = dataList[i];
         searchList.add(obj);
         break;
@@ -85,6 +85,14 @@ class _CountriesListScreenState extends State<CountriesListScreen> {
                     style: TextStyle(color: Colors.white),
                     controller: searchController,
                     decoration: InputDecoration(
+                      suffixIcon: IconButton(
+                          onPressed: () {
+                            searchController.clear();
+                          },
+                          icon: Icon(
+                            Icons.close_rounded,
+                            color: Colors.grey,
+                          )),
                       hintText: "Search with country Name",
                       contentPadding: EdgeInsets.only(left: width * 0.06),
                       hintStyle: TextStyle(color: Colors.white),

@@ -1,13 +1,13 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:covid_app/screens/main_screen.dart';
 import 'package:covid_app/utils/images.dart';
-import 'package:covid_app/widgets/custom_track_button.dart';
+
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
-import 'dart:convert';
+
 import 'package:http/http.dart' as http;
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'models/world_model.dart';
+
 import 'package:country_picker/country_picker.dart';
 
 Future<void> main() async {
